@@ -16,7 +16,8 @@ html {
 hr {
   border: 0;
   height: 4px;
-  background:url('http://localhost:3000/hr-img.png') repeat-x;
+  /* background:url('http://localhost:3000/hr-img.png') repeat-x; */
+  background:url('hr-img.png') repeat-x;
   width: 800px;
   margin: 0;
 }
