@@ -1,38 +1,200 @@
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .App {
-  text-align: center;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+hr {
+  border: 0;
+  height: 4px;
+  background:url('http://localhost:3000/hr-img.png') repeat-x;
+  width: 800px;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: 'Yellowtail', cursive;
+  margin: 0;
+  font-size: 2em;
+  line-height: 1em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+  font-size: .8em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.left-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.share-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+
+#post-date, #print {
+  font-family: 'Abel', sans-serif;
+  font-weight: lighter;
+  color: gray;
+}
+
+#post-date {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#print-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#post-title {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 2.5em;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.article-p {
+  text-indent: 30px;
+  font-family: 'Kaisei Tokumin', serif;
+}
+
+#notebook-paper {
+  margin-top: 20px;
+}
+
+#ingredients-list {
+  width: 800px;
+  height: 271px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+ul {
+  background-image: url('http://localhost:3000/list-bg.png');
+  background-repeat: no-repeat;
+  list-style: none;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+li {
+  font-family: 'Coming Soon', cursive;
+  color:rgb(68, 61, 52);
+}
+
+input {
+  margin-right: 10px;
+}
+
+
+/* Footer Styles */
+.author-share-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* margin-top: 20px; */
+}
+
+.author-container{
+  display: flex;
+  flex-direction: inherit;
+  align-items: center;
+  max-width: 70%;
+  gap: 15px;
+}
+
+.author-container img{
+width: 71px;
+height: 68px;
+}
+
+.text-container {
+  font-family: 'Kaisei Tokumin', serif;
+
+}
+
+.share-button{
+  background-color: rgb(187,112,85);
+  color: white;
+  border: none;
+  width: 185px;
+  height: 54px;
+  position: relative;
+  top: 18.72px;
+  font-family: 'Abel', sans-serif;
+  font-size: 1em;
+
+}
+
+.footer-line-img-container{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.footer-line-img-container img{
+  width: 31px;
+  height: 33px;
+}
+
+/* Could be a tad bit lighter */
+.hr-line-footer{
+  background: rgb(245, 245, 245);
+  height: 1px;
+  width: 47.4%;
+}
+
+.copyright-container{
+  margin-top: 28px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Kaisei Tokumin', serif;
+  font-size: .8em;
 }
 
-.App-link {
-  color: #61dafb;
+.copyright-text{
+  color: rgb(153,153,153);
+  padding: 0;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checked {
+  text-decoration: line-through;
 }
